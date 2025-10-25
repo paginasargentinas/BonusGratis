@@ -15,12 +15,25 @@
     {
       "@context": "https://schema.org",
       "@type": "WebPage",
-      "name": "BonusGratis Call to Action",
-      "description": "Página de inicio con un enlace principal a un recurso externo.",
-      "potentialAction": {
-        "@type": "LinkAction",
-        "name": "Acceder al Bonus",
-        "target": "https://example.com/bonus-link" 
+      "name": "BonusGratis - Colección de Ofertas",
+      "description": "Una colección de ofertas y bonus presentados en tarjetas.",
+      "mainEntity": {
+        "@type": "ItemList",
+        "name": "Lista de Bonus",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Bonus de Bienvenida",
+            "url": "https://example.com/bonus-1"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Oferta Especial",
+            "url": "https://example.com/bonus-2"
+          }
+        ]
       }
     }
     </script>
@@ -29,14 +42,29 @@
 </head>
 <body>
 
-    <main class="container">
-        <section class="cta-section">
-            <h1>Accede a tu Contenido Exclusivo</h1>
-            <p>Haz clic en el siguiente botón para ser redirigido a la oferta especial.</p>
-            
-            <!-- Este es el enlace principal, estilizado como un botón -->
-            <a href="https://example.com/bonus-link" class="cta-button">Acceder al Bonus</a>
-        </section>
+    <header class="main-header">
+        <h1>Ofertas y Bonus</h1>
+        <p>Explora nuestra colección de ofertas disponibles.</p>
+    </header>
+
+    <main class="card-container">
+        
+        <!-- Tarjeta de Presentación 1 (Plantilla) -->
+        <article class="card">
+            <h2>Bonus de Bienvenida</h2>
+            <p>Un bonus especial para nuevos usuarios que se registren hoy.</p>
+            <a href="https://example.com/bonus-1" class="cta-button">Obtener Bonus</a>
+        </article>
+
+        <!-- Tarjeta de Presentación 2 (Plantilla) -->
+        <article class="card">
+            <h2>Oferta de Verano</h2>
+            <p>Descuentos y ofertas especiales disponibles solo por tiempo limitado.</p>
+            <a href="https://example.com/bonus-2" class="cta-button">Ver Oferta</a>
+        </article>
+
+        <!-- Para añadir una nueva tarjeta, copia y pega una de las anteriores y modifica el contenido -->
+
     </main>
 
 </body>
